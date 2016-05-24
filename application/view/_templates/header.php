@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <link rel="icon" href="data:;base64,=">
     <link rel="stylesheet" href="<?php echo Config::get('URL'); ?>css/style.css" />
+    <link rel="stylesheet" href="<?php echo Config::get('URL'); ?>css/game.css" />
 </head>
 <body>
     <div class="wrapper">
@@ -24,12 +25,14 @@
                     <a href="<?php echo Config::get('URL'); ?>note/index">My Notes</a>
                 </li>
             <?php } else { ?>
-                <!-- for not logged in users -->
                 <li <?php if (View::checkForActiveControllerAndAction($filename, "login/index")) { echo ' class="active" '; } ?> >
                     <a href="<?php echo Config::get('URL'); ?>login/index">Login</a>
                 </li>
                 <li <?php if (View::checkForActiveControllerAndAction($filename, "login/register")) { echo ' class="active" '; } ?> >
                     <a href="<?php echo Config::get('URL'); ?>login/register">Register</a>
+                </li>
+                <li <?php if (View::checkForActiveControllerAndAction($filename, "game/index")) { echo ' class="active" '; } ?> >
+                    <a href="<?php echo Config::get('URL'); ?>game/index">Play Game</a>
                 </li>
             <?php } ?>
         </ul>

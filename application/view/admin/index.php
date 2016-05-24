@@ -3,7 +3,6 @@
 
     <div class="box">
 
-        <!-- echo out the system feedback (error and success messages) -->
         <?php $this->renderFeedbackMessages(); ?>
 
         <h3>What happens here ?</h3>

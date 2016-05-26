@@ -4,3 +4,7 @@
   background-attachment: fixed;
   background-size: 100%;
 }
+
+#keycode {
+  color: white;
+}

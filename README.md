@@ -1,4 +1,4 @@
-![Equilibrium - In-Browser Puzzle Game](public/img/logo.png)
+![Equilibrium - In-Browser Puzzle Game](public/_img/logo.png)
 #Equilibrium
 ###The puzzle game within the browser!
 

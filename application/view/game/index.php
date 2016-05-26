@@ -1,3 +1,7 @@
-<div class="container">
-	test
-</div>
+<html class="GamePage">
+
+<body class="gameBody">
+
+</body>
+
+</html>

@@ -5,6 +5,7 @@
 Equilibrium is a puzzle game where you combine two elements to create a new material.
 
 
+Completely worked into the [Huge](https://github.com/panique/huge) framework made by [panique](https://github.com/panique) with our own Javascript worked into it.
 
 This game includes a way to store your progress within the database via means of logging in.
 

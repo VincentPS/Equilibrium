@@ -1,9 +1,12 @@
 <!doctype html>
 <html>
 <head>
-    <title>HUGE</title>
+    <title>Equilibrium</title>
     <meta charset="utf-8">
-    <link rel="icon" href="data:;base64,=">
+    <meta name="description" content="Equilibrium is a puzzle-game built within the browser">
+    <meta name="keywords" content="Puzzle, Game, Webbased, Equilibrium">
+    <meta name="author" content="Ben Kemp, Vincent Schaddelee">
+    <link rel="icon" href="<?php echo Config::get('URL'); ?>favicon.png">
     <link rel="stylesheet" href="<?php echo Config::get('URL'); ?>css/style.css" />
     <link rel="stylesheet" href="<?php echo Config::get('URL'); ?>css/game.css" />
 </head>

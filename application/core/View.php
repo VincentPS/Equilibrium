@@ -15,6 +15,13 @@ class View
         require Config::get('PATH_VIEW') . '_templates/footer.php';
     }
 
+    public function renderGame($filename)
+    {
+        require Config::get('PATH_VIEW') . '_templates/gameheader.php';
+        require Config::get('PATH_VIEW') . $filename . '.php';
+        require Config::get('PATH_VIEW') . '_templates/gamefooter.php';
+    }
+
     public function renderMulti($filenames, $data = null)
     {
         if (!is_array($filenames)) {

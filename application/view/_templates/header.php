@@ -8,7 +8,6 @@
     <meta name="author" content="Ben Kemp, Vincent Schaddelee">
     <link rel="icon" href="<?php echo Config::get('URL'); ?>favicon.png">
     <link rel="stylesheet" href="<?php echo Config::get('URL'); ?>css/style.css" />
-    <link rel="stylesheet" href="<?php echo Config::get('URL'); ?>css/game.css" />
 </head>
 <body>
     <div class="wrapper">

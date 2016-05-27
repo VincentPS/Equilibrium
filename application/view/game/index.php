@@ -1,7 +1,8 @@
 <html id="GamePage">
 
 <body class="gameBody">
-	<h1 id="keycode"> SUPER LOLOLOLOLOLOLOL</h1>
+	<img src="<?php echo Config::get('URL'); ?>_img/space_Background.png">
+"
 </body>
 
 </html>

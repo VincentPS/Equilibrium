@@ -22,6 +22,9 @@
             <li <?php if (View::checkForActiveControllerAndAction($filename, "game/index")) { echo ' class="active" '; } ?> >
                 <a href="<?php echo Config::get('URL'); ?>game/index">Play Game</a>
             </li>
+            <li <?php if (View::checkForActiveControllerAndAction($filename, "test/index")) { echo ' class="active" '; } ?> >
+                <a href="<?php echo Config::get('URL'); ?>test/index">TEST AREA</a>
+            </li>
             <?php if (Session::userIsLoggedIn()) { ?>
                 <li <?php if (View::checkForActiveController($filename, "dashboard")) { echo ' class="active" '; } ?> >
                     <a href="<?php echo Config::get('URL'); ?>dashboard/index">Dashboard</a>

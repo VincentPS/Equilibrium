@@ -6,9 +6,6 @@
 	body {
 		overflow: hidden;
     }
-    canvas{
-
-    }
 </style>
 <body>
     <canvas></canvas>
@@ -29,18 +26,6 @@
                 ctx.drawImage(space, 0, 0, canvas.width, canvas.height);
 
                 ctx.save();
-                ctx.translate(438.5, 223);
-                ctx.strokeStyle = '#06c';
-                ctx.beginPath();
-                ctx.lineWidth = 0.05;
-                for (var i = 0; i < 60; ++i) {
-                    ctx.rotate(6 * i * Math.PI / 180);
-                    ctx.moveTo(9, 0);
-                    ctx.lineTo(10, 0);
-                    ctx.rotate(-6 * i * Math.PI / 180);
-                }
-                ctx.stroke();
-                ctx.restore();
             }
             redraw();
 
@@ -69,15 +54,21 @@
                 if (!dragged) zoom(evt.shiftKey ? -1 : 1);
             }, false);
 
-            var scaleFactor = 1.015;
-            var zoom = function(clicks) {
-                var pt = ctx.transformedPoint(lastX, lastY);
-                ctx.translate(pt.x, pt.y);
-                var factor = Math.pow(scaleFactor, clicks);
-                ctx.scale(factor, factor);
-                ctx.translate(-pt.x, -pt.y);
-                redraw();
-            }
+            var scaleFactor = 1.015,
+                ticks = 0,
+                zoom = function(clicks) {
+                    ticks = ticks + clicks;
+                    if (ticks < 0) {
+                        ticks = 0;
+                    } else {
+                        var pt = ctx.transformedPoint(lastX, lastY);
+                        ctx.translate(pt.x, pt.y);
+                        var factor = Math.pow(scaleFactor, clicks);
+                        ctx.scale(factor, factor);
+                        ctx.translate(-pt.x, -pt.y);
+                        redraw();
+                    }
+                }
 
             var handleScroll = function(evt) {
                 var delta = evt.wheelDelta ? evt.wheelDelta / 40 : evt.detail ? -evt.detail : 0;

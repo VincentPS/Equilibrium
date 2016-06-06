@@ -1,12 +1,18 @@
 <style type="text/css" media="screen">
-	*, *:before, *:after{
-		margin:0;
-		padding:0;
-	}
-	body {
-		overflow: hidden;
+    *,
+    *:before,
+    *:after {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
     }
 </style>
+
 <body>
     <canvas></canvas>
     <script type="text/javascript" charset="utf-8">
@@ -28,7 +34,8 @@
                 ctx.save();
             }
             redraw();
-
+						var maxLeft = window.innerWidth;
+						var maxTop = window.innerHeight;
             var lastX = canvas.width / 2,
                 lastY = canvas.height / 2;
             var dragStart, dragged;
@@ -40,8 +47,8 @@
                 dragged = false;
             }, false);
             canvas.addEventListener('mousemove', function(evt) {
-                lastX = evt.offsetX || (evt.pageX - canvas.offsetLeft);
-                lastY = evt.offsetY || (evt.pageY - canvas.offsetTop);
+                lastX = evt.offsetX > maxLeft || (evt.pageX - canvas.offsetLeft);
+                lastY = evt.offsetY > maxTop  || (evt.pageY - canvas.offsetTop);
                 dragged = true;
                 if (dragStart) {
                     var pt = ctx.transformedPoint(lastX, lastY);

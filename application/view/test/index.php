@@ -1,18 +1,17 @@
-
-
-
+<
 
 <script>
+    $(test);
 
-$(test);
+    function test() {
+        $('.draggable').draggable();
+        $('.droppable').droppable({
+            drop: handleDropEvent
+        });
+    }
 
-function test() {
-    $('.draggable').draggable();
-    $('.droppable').droppable({drop: handleDropEvent});
-}
-
-function handleDropEvent( event, ui ) {
- var draggable = ui.draggable;
- $('p').text("Hello World!");
-}
+    function handleDropEvent(event, ui) {
+        var draggable = ui.draggable;
+        $('p').text("Hello World!");
+    }
 </script>

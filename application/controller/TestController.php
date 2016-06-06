@@ -3,6 +3,6 @@
 class TestController extends Controller
 {
 	public function index(){
-		$this->View->render('test/index');
+		$this->View->renderGame('test/index');
 	}
 }

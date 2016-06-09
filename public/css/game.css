@@ -28,7 +28,7 @@
 }
 
 #combiner {
-  position: fixed;
+  position: absolute;
   width: 540px;
   height: 360px;
   float: right;
@@ -47,4 +47,15 @@
 
 .draggable {
   z-index: 1000;
+}
+#fire{
+  cursor: pointer;
+}
+
+#Parent1 {
+  position: fixed !important;
+  -moz-user-drag: none !important;
+  -webkit-user-drag: none !important;
+  -ms-user-drag: none !important;
+  -o-user-drag: none !important;
 }

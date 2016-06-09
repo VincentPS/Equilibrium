@@ -8,13 +8,19 @@
         });
     }
 
-    var child1 = $(".droppable").has(".draggable");
-    var child2 = $(".droppable2").has(".draggable");
-
     function handleDragEvent() {
       $(".draggable").mouseup(function() {
-        var dropSpot = $(".draggable").appendTo("#combiner").css("left: 10px; top: -200px;");
-        $(dropSpot);
+        var offset = $(this).offset();
+        console.log(this);
+            var xPos = offset.left;
+            var yPos = offset.top;
+            $('.draggable').text('y/x: ' + yPos + xPos);
+            var xPosImg = offset.left;
+        if (xPos > yPos) {
+          var dropSpot = $(".draggable").appendTo("#combiner").attr("id", "Parent1").draggable({cancel:"#Parent1"});
+        } else if(xPos < yPos) {
+          var dropSpot2 = $(".draggable").appendTo("#combiner").attr("id", "Parent2").draggable({cancel:"#Parent2"});
+        }
       })
     }
 
@@ -28,11 +34,11 @@
     <img id="fire" class="draggable" src="<?php echo Config::get('URL'); ?>_img/materials/fire.png">
     <canvas></canvas>
     <div id="combiner">
-        <!--<img id="combinerContainer" src="<?php //echo Config::get('URL'); ?>_img/Combine2.png" usemap="#combinerMap">
+        <img id="combinerContainer" src="<?php echo Config::get('URL'); ?>_img/Combine2.png" usemap="#combinerMap">
         <map id="combinerMap" name="combinerMap">
         <area id="area1" shape="rect" coords="56,34,195,337" target="_self" class="droppable">
-        <area shape="rect" coords="348,34,486,339" target="_self" class="droppable2">
-      </map>-->
+        <area id="area2" shape="rect" coords="348,34,486,339" target="_self" class="droppable2">
+      </map>
     </div>
 </body>
 

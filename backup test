@@ -4,42 +4,38 @@
     function test() {
         $('.draggable').draggable();
         $('.droppable').droppable({
-            drop: handleDragEvent(this)
+            drop: handleDropEvent
         });
+        $('.droppable2').droppable({
+            drop: handleDropEvent
+        });
+
     }
 
-    function handleDragEvent() {
-      $(".draggable").mouseup(function() {
-        var offset = $(this).offset();
-        console.log(this);
-            var xPos = offset.left;
-            var yPos = offset.top;
-            $('.draggable').text('y/x: ' + yPos + xPos);
-            var xPosImg = offset.left;
-        if (xPos > yPos) {
-          var dropSpot = $(".draggable").appendTo("#combiner").attr("id", "Parent1").draggable({cancel:"#Parent1"});
-        } else if(xPos < yPos) {
-          var dropSpot2 = $(".draggable").appendTo("#combiner").attr("id", "Parent2").draggable({cancel:"#Parent2"});
-        }
-      })
-    }
+    var child1 = $(".droppable").has(".draggable");
+    var child2 = $(".droppable2").has(".draggable");
 
-    function handleDropEvent(ui) {
+
+    function handleDropEvent(event, ui) {
         var draggable = ui.draggable;
-
+        var dropSpot = ".droppable";
+        if (child1) {
+          dropSpot == ".droppable2";
+        }
+        $(".draggable").appendTo(dropSpot);
     }
 </script>
 
 <body id="testArea">
     <img id="fire" class="draggable" src="<?php echo Config::get('URL'); ?>_img/materials/fire.png">
     <canvas></canvas>
-    <div id="combiner">
-        <img id="combinerContainer" src="<?php echo Config::get('URL'); ?>_img/Combine2.png" usemap="#combinerMap">
-        <map id="combinerMap" name="combinerMap">
-        <area id="area1" shape="rect" coords="56,34,195,337" target="_self" class="droppable">
-        <area id="area2" shape="rect" coords="348,34,486,339" target="_self" class="droppable2">
+    <section id="combiner">
+        <img id="combinerContainer" src="<?php echo Config::get('URL'); ?>_img/Combine.png" usemap="#combinerMap">
+        <map name="combinerMap">
+        <area shape="rect" coords="56,34,195,337" target="_self" class="droppable">
+        <area shape="rect" coords="348,34,486,339" target="_self" class="droppable2">
       </map>
-    </div>
+    </section>
 </body>
 
 <script type="text/javascript" charset="utf-8">

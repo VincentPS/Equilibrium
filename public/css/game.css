@@ -20,3 +20,42 @@
   width: 100%;
   height: 100%;
 }
+
+#testArea {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#combiner {
+  position: absolute;
+  width: 540px;
+  height: 360px;
+  float: right;
+  bottom: 1rem;
+  right: 1rem;
+  background-image: url("../_img/combine2.png");
+  background-color: white;
+}
+
+#combinerContainer {
+  background-attachment: fixed;
+  width: 540px;
+  height: 360px;
+  z-index: 100;
+}
+
+.draggable {
+  z-index: 1000;
+}
+#fire{
+  cursor: pointer;
+}
+
+#Parent1 {
+  position: fixed !important;
+  -moz-user-drag: none !important;
+  -webkit-user-drag: none !important;
+  -ms-user-drag: none !important;
+  -o-user-drag: none !important;
+}

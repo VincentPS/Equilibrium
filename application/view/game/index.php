@@ -6,8 +6,10 @@
 	body {
 		overflow: hidden;
     }
+    canvas {
+        background-color: black;
+    }
 </style>
-<body>
     <canvas></canvas>
     <script type="text/javascript" charset="utf-8">
         var canvas = document.getElementsByTagName('canvas')[0];
@@ -23,7 +25,7 @@
                 var p2 = ctx.transformedPoint(canvas.width, canvas.height);
                 ctx.clearRect(p1.x, p1.y, p2.x - p1.x, p2.y - p1.y);
 
-                ctx.drawImage(space, 0, 0, canvas.width, canvas.height);
+                ctx.drawImage(space, -960, -540, canvas.width+1920, canvas.height+1080);
 
                 ctx.save();
             }
@@ -36,6 +38,7 @@
                 document.body.style.mozUserSelect = document.body.style.webkitUserSelect = document.body.style.userSelect = 'none';
                 lastX = evt.offsetX || (evt.pageX - canvas.offsetLeft);
                 lastY = evt.offsetY || (evt.pageY - canvas.offsetTop);
+                console.log(evt.offsetX);
                 dragStart = ctx.transformedPoint(lastX, lastY);
                 dragged = false;
             }, false);
@@ -60,6 +63,8 @@
                     ticks = ticks + clicks;
                     if (ticks < 0) {
                         ticks = 0;
+                    } else if (ticks > 125) {
+                        ticks = 125;
                     } else {
                         var pt = ctx.transformedPoint(lastX, lastY);
                         ctx.translate(pt.x, pt.y);
@@ -78,7 +83,7 @@
             canvas.addEventListener('DOMMouseScroll', handleScroll, false);
             canvas.addEventListener('mousewheel', handleScroll, false);
         };
-        space.src = "<?php echo Config::get('URL'); ?>_img/space_background-min.png";
+        space.src = "<?php echo Config::get('URL'); ?>_img/space_bg.png";
 
         function trackTransforms(ctx) {
             var svg = document.createElementNS("http://www.w3.org/2000/svg", 'svg');

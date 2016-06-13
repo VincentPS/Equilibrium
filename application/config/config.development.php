@@ -15,7 +15,7 @@ return array(
 	'PATH_AVATARS' => realpath(dirname(__FILE__).'/../../') . '/public/avatars/',
 	'PATH_AVATARS_PUBLIC' => 'avatars/',
 	
-	'DEFAULT_CONTROLLER' => 'index',
+	'DEFAULT_CONTROLLER' => 'login',
 	'DEFAULT_ACTION' => 'index',
 	
 	'DB_TYPE' => 'mysql',

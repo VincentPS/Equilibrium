@@ -3,9 +3,7 @@
 
     function test() {
         $('.draggable').draggable();
-        $('.droppable').droppable({
-            drop: handleDragEvent(this)
-        });
+        $('.droppable').droppable({drop: handleDragEvent(this)});
     }
 
     function handleDragEvent() {

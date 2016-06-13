@@ -16,7 +16,7 @@
             var yPos = offset.top;
             $('.draggable').text('y/x: ' + yPos + xPos);
             var xPosImg = offset.left;
-        if (xPos > yPos) {
+            var coords = $("#area1, coords")
           var dropSpot = $(".draggable").appendTo("#combiner").attr("id", "Parent1").draggable({cancel:"#Parent1"});
         } else if(xPos < yPos) {
           var dropSpot2 = $(".draggable").appendTo("#combiner").attr("id", "Parent2").draggable({cancel:"#Parent2"});

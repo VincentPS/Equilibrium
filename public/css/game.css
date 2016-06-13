@@ -4,7 +4,7 @@
 }
 body {
   overflow: hidden;
-} 
+}
 
 #gameBody {
   /*background: url(../_img/space_background.png);
@@ -63,7 +63,7 @@ body {
   cursor: pointer;
 }
 
-#Parent1 {
+#Parent1, #Parent2 {
   position: fixed !important;
   -moz-user-drag: none !important;
   -webkit-user-drag: none !important;

@@ -1,0 +1,3 @@
+als imageX is groter dan position1MinimumX en kleiner dan positionMaximumX en imageY is groter dan positionMinimumY en kleiner dan positionMaximumY.
+x = windows.width - combiner.positionLeft - combinerWidth + combinerMap(area 1x + 2x(aparte values)).
+y = windows.height - combiner.positionTop - combinerHeight + combinerMap(area 1y + 2y(aparte values)).

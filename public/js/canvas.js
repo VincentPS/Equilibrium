@@ -24,7 +24,6 @@ window.onload = function() {
         document.body.style.mozUserSelect = document.body.style.webkitUserSelect = document.body.style.userSelect = 'none';
         lastX = evt.offsetX || (evt.pageX - canvas.offsetLeft);
         lastY = evt.offsetY || (evt.pageY - canvas.offsetTop);
-        console.log(evt.offsetX);
         dragStart = ctx.transformedPoint(lastX, lastY);
         dragged = false;
     }, false);
@@ -71,7 +70,7 @@ window.onload = function() {
     canvas.addEventListener('mousewheel', handleScroll, false);
     };
 
-    space.src = "../_img/space_bg.png";
+    space.src = "_img/space_bg.png";
 
     function trackTransforms(ctx) {
     var svg = document.createElementNS("http://www.w3.org/2000/svg", 'svg');

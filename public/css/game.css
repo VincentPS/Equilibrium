@@ -70,9 +70,78 @@ body {
   -o-user-drag: none !important;
 }
 
-.circle{
-  width: 100px;
-  height: 100px;
+.innerAlpha, .innerBeta, .innerGamma, .innerDelta, .innerOmega {
+  display: none;
+}
+
+.alpha:hover .innerAlpha {
+  display: block;
+  list-style-type: none;
+}
+
+.beta:hover .innerBeta {
+  display: block;
+  list-style-type: none;
+}
+
+.gamma:hover .innerGamma {
+  display: block;
+  list-style-type: none;
+}
+
+.delta:hover .innerDelta {
+  display: block;
+  list-style-type: none;
+}
+
+.omega:hover .innerOmega {
+  display: block;
+  list-style-type: none;
+}
+
+.alpha {
+  float: left;
+  position: absolute;
+  left: 15rem;
+  top: 10rem;
+  list-style-type: none;
+}
+
+.alpha img, .beta img, .gamma img, .delta img, .omega img {
+  width: 110px;
+  height: 120px;
+}
+
+.beta {
+  float: left;
+  position: absolute;
+  top: 10rem;
+  left: 43rem;
+  list-style-type: none;
+}
+
+.gamma {
+  float: left;
+  position: absolute;
+  top: 25rem;
+  left: 20rem;
+  list-style-type: none;
+}
+
+.delta {
+  float: left;
+  position: absolute;
+  top: 25rem;
+  left: 36rem;
+  list-style-type: none;
+}
+
+.omega {
+  float: left;
+  position: absolute;
+  top: 42rem;
+  left: 27.5rem;
+  list-style-type: none;
 }
 
 #return{
@@ -84,5 +153,11 @@ body {
   font-weight: bold;
   color: grey;
   width: 50%;
+<<<<<<< HEAD
   margin-top: 3rem;
 }
+=======
+  height: 10%;
+  margin-top: 5rem;
+}
+>>>>>>> refs/remotes/origin/master

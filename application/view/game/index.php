@@ -1,8 +1,30 @@
-<img class="circle" src="<?php echo Config::get('URL'); ?>_img/alpha.gif">
-<img class="circle" src="<?php echo Config::get('URL'); ?>_img/beta.gif">
-<img class="circle" src="<?php echo Config::get('URL'); ?>_img/gamma.gif">
-<img class="circle" src="<?php echo Config::get('URL'); ?>_img/delta.gif">
-<img class="circle" src="<?php echo Config::get('URL'); ?>_img/omega.gif">
+<ul class="circle">
+  <li class="alpha"><img src="<?php echo Config::get('URL'); ?>_img/alpha.gif">
+    <ul class="innerAlpha">
+      <li>test</li>
+    </ul>
+  </li>
+  <li class="beta"><img src="<?php echo Config::get('URL'); ?>_img/beta.gif">
+    <ul class="innerBeta">
+      <li>test</li>
+    </ul>
+  </li>
+  <li class="gamma"><img src="<?php echo Config::get('URL'); ?>_img/gamma.gif">
+    <ul class="innerGamma">
+      <li>test</li>
+    </ul>
+  </li>
+  <li class="delta"><img src="<?php echo Config::get('URL'); ?>_img/delta.gif">
+    <ul class="innerDelta">
+      <li>test</li>
+    </ul>
+  </li>
+  <li class="omega"><img src="<?php echo Config::get('URL'); ?>_img/omega.gif">
+    <ul class="innerOmega">
+      <li>test</li>
+    </ul>
+  </li>
+</ul>
 
 <div id="combiner">
     <img id="combinerContainer" src="<?php echo Config::get('URL'); ?>_img/Combiner2.png" usemap="#combinerMap">

@@ -11,3 +11,4 @@
     <script src="<?php echo Config::get('URL'); ?>js/jquery-ui.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet' type='text/css'>
 </head>
+<body id="gameBody">

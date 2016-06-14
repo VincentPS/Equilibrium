@@ -7,7 +7,8 @@ class GameController extends Controller
 	}
 
 	public function showAllMaterials(){
-		//get progress and show
+		$this->Model->getAllMaterials();
+		var_dump($this);
 	}
 
 	public function combineMaterial(){

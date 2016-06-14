@@ -145,13 +145,19 @@ body {
 }
 
 #return{
-  border: 5px solid grey;
+  border: 8px solid grey;
   border-radius: .5rem;
   background-color: transparent;
   font-family: Itim, cursive;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
+  color: grey;
   width: 50%;
+<<<<<<< HEAD
+  margin-top: 3rem;
+}
+=======
   height: 10%;
   margin-top: 5rem;
 }
+>>>>>>> refs/remotes/origin/master

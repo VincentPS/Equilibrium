@@ -10,5 +10,5 @@
 	    <area shape="rect" coords="56,34,195,337" target="_self" class="droppable">
 	    <area shape="rect" coords="348,34,487,337" target="_self" class="droppable">
 	</map>
-	<button onclick="returnMaterials()">Return</button>
+	<button id="return" onclick="returnMaterials()">Return</button>
 </div>

@@ -10,6 +10,8 @@ class GameModel
         $query = $database->prepare($sql);
         $query->execute();
 
-        $materials = $query->fetch();
+        $materials = $query->fetchAll();
+
+        return $materials;
 	}
 }

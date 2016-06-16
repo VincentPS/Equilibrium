@@ -41,6 +41,7 @@ INSERT INTO `materials` (`mat_id`, `mat_name`, `parent_1_id`, `parent_2_id`, `ci
 	(8, 'Energy', 2, 5, 'B', ''),
 	(9, 'Swamp', 3, 4, 'B', ''),
 	(10, 'Lava', 2, 4, 'B', ''),
+	(11, 'Astronaut', 23, 54, 'D', ''),
 	(12, 'Ash', 2, 7, 'B', ''),
 	(13, 'Plasma', 2, 8, 'B', ''),
 	(14, 'Stone', 10, 3, 'B', ''),
@@ -75,6 +76,7 @@ INSERT INTO `materials` (`mat_id`, `mat_name`, `parent_1_id`, `parent_2_id`, `ci
 	(43, 'Angel', 23, 42, 'D', ''),
 	(44, 'God', 42, 43, 'O', ''),
 	(45, 'Religion', 23, 44, 'D', ''),
+	(46, 'Alien', 54, 16, 'O', ''),
 	(47, 'Hope', 45, 23, 'D', ''),
 	(48, 'Sand', 3, 4, 'A', ''),
 	(49, 'Glass', 48, 2, 'G', ''),
@@ -127,15 +129,13 @@ INSERT INTO `materials` (`mat_id`, `mat_name`, `parent_1_id`, `parent_2_id`, `ci
 	(96, 'Apocalypse', 91, 95, 'O', ''),
 	(97, 'Pestilence', 71, 38, 'O', ''),
 	(98, 'Death', 38, 72, 'O', ''),
-	(99, 'Astronaut', 23, 54, 'D', ''),
-	(100, 'Alien', 54, 16, 'O', ''),
-	(101, 'Darkness', 19, 96, 'O', ''),
-	(102, 'Equilibrium', 1, 102, 'E', '');
+	(99, 'Darkness', 19, 96, 'O', ''),
+	(100, 'Equilibrium', 1, 99, 'E', '');
 /*!40000 ALTER TABLE `materials` ENABLE KEYS */;
 
 
--- Structuur van  tabel equilibrium.user_data wordt geschreven
-CREATE TABLE IF NOT EXISTS `user_data` (
+-- Structuur van  tabel equilibrium.users wordt geschreven
+CREATE TABLE IF NOT EXISTS `users` (
   `user_id` int(11) NOT NULL AUTO_INCREMENT,
   `session_id` varchar(48) DEFAULT NULL,
   `user_name` varchar(64) NOT NULL,
@@ -151,21 +151,21 @@ CREATE TABLE IF NOT EXISTS `user_data` (
   `user_password_reset_hash` char(40) DEFAULT NULL,
   `user_password_reset_timestamp` bigint(20) DEFAULT NULL,
   `user_provider_type` text,
-  `alpha_progress` int(11) NOT NULL,
-  `beta_progress` int(11) NOT NULL,
-  `gamma_progress` int(11) NOT NULL,
-  `delta_progress` int(11) NOT NULL,
-  `omega_progress` int(11) NOT NULL,
+  `alpha_progress` varchar(7) NOT NULL,
+  `beta_progress` varchar(11) NOT NULL,
+  `gamma_progress` varchar(19) NOT NULL,
+  `delta_progress` varchar(24) NOT NULL,
+  `omega_progress` varchar(38) NOT NULL,
   `end_game` tinyint(4) NOT NULL DEFAULT '0',
   PRIMARY KEY (`user_id`),
   UNIQUE KEY `user_name` (`user_name`),
   UNIQUE KEY `user_email` (`user_email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- Dumpen data van tabel equilibrium.user_data: ~0 rows (ongeveer)
-DELETE FROM `user_data`;
-/*!40000 ALTER TABLE `user_data` DISABLE KEYS */;
-/*!40000 ALTER TABLE `user_data` ENABLE KEYS */;
+-- Dumpen data van tabel equilibrium.users: ~0 rows (ongeveer)
+DELETE FROM `users`;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

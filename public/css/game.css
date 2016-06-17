@@ -58,6 +58,7 @@ body {
 
 .draggable {
   z-index: 1000;
+  position: relative;
 }
 #fire{
   cursor: pointer;

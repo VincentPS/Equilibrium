@@ -54,8 +54,8 @@
 <div id="combiner">
     <img id="combinerContainer" src="<?php echo Config::get('URL'); ?>_img/Combiner2.png" usemap="#combinerMap">
     <map id="combinerMap" name="combinerMap">
-	    <area shape="rect" coords="60,59,273,531" class="droppable area1">
-	    <area shape="rect" coords="520,59,732,531" class="droppable area2">
+	    <area shape="rect" coords="60,59,273,531" class="droppablearea1">
+	    <area shape="rect" coords="520,59,732,531" class="droppablearea2">
 	</map>
 	<button id="return" onclick="returnMaterials()">Return</button>
 </div>

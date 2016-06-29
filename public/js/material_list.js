@@ -10,6 +10,8 @@ function openAlpha() {
 			var mat_name = value.mat_name.toLowerCase();
 			$('.materials').append("<img class='draggable " + mat_name + "' src='" + URL + "/_img/materials/" + mat_name + ".png'>");
 		});
+		var parent1 = $('.draggable').position();
+		$('.alpha').addClass('active');
 	});
 }
 
@@ -25,6 +27,9 @@ function openBeta() {
 			var mat_name = value.mat_name.toLowerCase();
 			$('.materials').append("<img class='draggable " + mat_name + "' src='" + URL + "/_img/materials/" + mat_name + ".png'>");
 		});
+		var parent1 = $('.draggable').position();
+
+		$('.beta').addClass('active');
 	});
 }
 
@@ -40,6 +45,9 @@ function openGamma() {
 			var mat_name = value.mat_name.toLowerCase();
 			$('.materials').append("<img class='draggable " + mat_name + "' src='" + URL + "/_img/materials/" + mat_name + ".png'>");
 		});
+		var parent1 = $('.draggable').position();
+
+		$('.gamma').addClass('active');
 	});
 }
 
@@ -55,6 +63,9 @@ function openDelta() {
 			var mat_name = value.mat_name.toLowerCase();
 			$('.materials').append("<img class='draggable " + mat_name + "' src='" + URL + "/_img/materials/" + mat_name + ".png'>");
 		});
+		var parent1 = $('.draggable').position();
+
+		$('.delta').addClass('active');
 	});
 }
 
@@ -70,5 +81,8 @@ function openOmega() {
 			var mat_name = value.mat_name.toLowerCase();
 			$('.materials').append("<img class='draggable " + mat_name + "' src='" + URL + "/_img/materials/" + mat_name + ".png'>");
 		});
+		var parent1 = $('.draggable').position();
+
+		$('.omega').addClass('active');
 	});
 }

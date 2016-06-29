@@ -16,6 +16,7 @@ function openAlpha() {
 		$('.gamma').removeClass('active');
 		$('.delta').removeClass('active');
 		$('.omega').removeClass('active');
+		$(initial);
 	});
 }
 
@@ -38,6 +39,7 @@ function openBeta() {
 		$('.gamma').removeClass('active');
 		$('.delta').removeClass('active');
 		$('.omega').removeClass('active');
+		$(initial);
 	});
 }
 
@@ -60,6 +62,7 @@ function openGamma() {
 		$('.alpha').removeClass('active');
 		$('.delta').removeClass('active');
 		$('.omega').removeClass('active');
+		$(initial);
 	});
 }
 
@@ -82,6 +85,7 @@ function openDelta() {
 		$('.gamma').removeClass('active');
 		$('.alpha').removeClass('active');
 		$('.omega').removeClass('active');
+		$(initial);
 	});
 }
 
@@ -104,5 +108,6 @@ function openOmega() {
 		$('.gamma').removeClass('active');
 		$('.delta').removeClass('active');
 		$('.alpha').removeClass('active');
+		$(initial);
 	});
 }

@@ -10,6 +10,9 @@
 </section>
 
 <div id="combiner">
-    <img id="combinerContainer" src="<?php echo Config::get('URL'); ?>_img/Combiner3.png">
-	<button id="return" onclick="returnMaterials(parent1)">Return</button>
+    <div id="combinerContainer">
+    	<div id="combinerArea1"></div>
+    	<div id="combinerArea2"></div>
+    </div>
+	<button id="return" onclick="returnMaterials()">Return</button>
 </div>

@@ -1,3 +1,5 @@
-function returnMaterials(parent1) {
-  $('.draggable').css(parent1);
+function returnMaterials() {
+	$('#Parent1').remove();
+	$('#Parent2').remove();
+	closeAll();
 }

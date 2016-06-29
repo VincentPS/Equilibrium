@@ -1,3 +1,12 @@
+function closeAll() {
+	$('.materials').html("");
+	$('.alpha').removeClass('active');
+	$('.beta').removeClass('active');
+	$('.gamma').removeClass('active');
+	$('.delta').removeClass('active');
+	$('.omega').removeClass('active');
+}
+
 function openAlpha() {
 	$.ajax({
 		method: "GET",
@@ -7,8 +16,9 @@ function openAlpha() {
 		var alphaMaterials = response;
 		$('.materials').html("");
 		$.each(alphaMaterials, function(key, value){
-			var mat_name = value.mat_name.toLowerCase();
-			$('.materials').append("<img class='draggable " + mat_name + "' src='" + URL + "/_img/materials/" + mat_name + ".png'>");
+			var mat_name = value.mat_name.toLowerCase(),
+				mat_id = value.mat_id;
+			$('.materials').append("<img class='draggable " + mat_name + " " + mat_id + "' src='" + URL + "/_img/materials/" + mat_name + ".png'>");
 		});
 		var parent1 = $('.draggable').position();
 		$('.alpha').addClass('active');

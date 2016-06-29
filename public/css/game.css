@@ -63,9 +63,13 @@ body {
 
 .materials {
   width: 40rem;
+  height: 52.76rem;
   top: 4rem;
   position: absolute;
   left: 17.5rem;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
+  padding-left: 1rem;
 }
 
 .draggable {
@@ -90,7 +94,8 @@ body {
 
 
 .active{
-  background-color: red;
+  border-bottom: 3px solid black;
+  width: 120px;
 }
 
 .alpha {

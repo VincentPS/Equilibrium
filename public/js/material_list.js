@@ -12,6 +12,10 @@ function openAlpha() {
 		});
 		var parent1 = $('.draggable').position();
 		$('.alpha').addClass('active');
+		$('.beta').removeClass('active');
+		$('.gamma').removeClass('active');
+		$('.delta').removeClass('active');
+		$('.omega').removeClass('active');
 	});
 }
 
@@ -30,6 +34,10 @@ function openBeta() {
 		var parent1 = $('.draggable').position();
 
 		$('.beta').addClass('active');
+		$('.alpha').removeClass('active');
+		$('.gamma').removeClass('active');
+		$('.delta').removeClass('active');
+		$('.omega').removeClass('active');
 	});
 }
 
@@ -48,6 +56,10 @@ function openGamma() {
 		var parent1 = $('.draggable').position();
 
 		$('.gamma').addClass('active');
+		$('.beta').removeClass('active');
+		$('.alpha').removeClass('active');
+		$('.delta').removeClass('active');
+		$('.omega').removeClass('active');
 	});
 }
 
@@ -66,6 +78,10 @@ function openDelta() {
 		var parent1 = $('.draggable').position();
 
 		$('.delta').addClass('active');
+		$('.beta').removeClass('active');
+		$('.gamma').removeClass('active');
+		$('.alpha').removeClass('active');
+		$('.omega').removeClass('active');
 	});
 }
 
@@ -84,5 +100,9 @@ function openOmega() {
 		var parent1 = $('.draggable').position();
 
 		$('.omega').addClass('active');
+		$('.beta').removeClass('active');
+		$('.gamma').removeClass('active');
+		$('.delta').removeClass('active');
+		$('.alpha').removeClass('active');
 	});
 }

@@ -1,5 +1,3 @@
-$(initial);
-
 function initial() {
     $('.draggable').draggable();
     $('.droppable').droppable({drop: handleDragEvent(this)});

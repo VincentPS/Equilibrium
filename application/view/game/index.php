@@ -7,6 +7,6 @@
 </ul>
 
 <div id="combiner">
-    <img id="combinerContainer" src="<?php echo Config::get('URL'); ?>_img/Combiner2.png">
+    <img id="combinerContainer" src="<?php echo Config::get('URL'); ?>_img/Combiner3.png">
 	<button id="return" onclick="returnMaterials()">Return</button>
 </div>

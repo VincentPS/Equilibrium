@@ -2,6 +2,10 @@
   margin:0;
   padding:0;
   outline: none;
+  -moz-user-drag: none !important;
+  -webkit-user-drag: none !important;
+  -ms-user-drag: none !important;
+  -o-user-drag: none !important;
 }
 body {
   overflow: hidden;
@@ -60,9 +64,6 @@ body {
   z-index: 1000;
   position: relative;
 }
-#fire{
-  cursor: pointer;
-}
 
 #Parent1, #Parent2 {
   position: fixed !important;
@@ -71,35 +72,6 @@ body {
   -ms-user-drag: none !important;
   -o-user-drag: none !important;
 }
-
-/* .innerAlpha, .innerBeta, .innerGamma, .innerDelta, .innerOmega {
-  display: none;
-}
-
-.alpha:hover .innerAlpha {
-  display: block;
-  list-style-type: none;
-}
-
-.beta:hover .innerBeta {
-  display: block;
-  list-style-type: none;
-}
-
-.gamma:hover .innerGamma {
-  display: block;
-  list-style-type: none;
-}
-
-.delta:hover .innerDelta {
-  display: block;
-  list-style-type: none;
-}
-
-.omega:hover .innerOmega {
-  display: block;
-  list-style-type: none;
-} */
 
 .circle{
   position: relative;
@@ -135,6 +107,15 @@ body {
 .alpha img, .beta img, .gamma img, .delta img, .omega img {
   width: 110px;
   height: 120px;
+}
+
+button{
+  border: none;
+  background-color: transparent;
+}
+
+.materials{
+  
 }
 
 #return {

@@ -4,7 +4,13 @@ class GameController extends Controller
 {
 	public function index()
 	{
-		$this->View->renderGame('game/index', array('materials' => gameModel::getAllMaterials()));
+		$this->View->renderGame('game/index');
+	}
+
+	public function getAllMaterials($circle)
+	{
+		$materials = gameModel::getAllMaterials($circle);
+		$this->View->renderJSON($materials);
 	}
 
 	public function combineMaterial()

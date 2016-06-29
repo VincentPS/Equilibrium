@@ -60,9 +60,18 @@ body {
   z-index: 100;
 }
 
+
+.materials {
+  width: 40rem;
+  top: 4rem;
+  position: absolute;
+  left: 17.5rem;
+}
+
 .draggable {
   z-index: 1000;
   position: relative;
+
 }
 
 #Parent1, #Parent2 {
@@ -77,6 +86,11 @@ body {
   position: relative;
   top: 4rem;
   left: 10rem;
+}
+
+
+.active{
+  background-color: red;
 }
 
 .alpha {
@@ -115,7 +129,7 @@ button{
 }
 
 .materials{
-  
+
 }
 
 #return {

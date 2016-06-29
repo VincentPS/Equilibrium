@@ -1,5 +1,3 @@
-var parent1 = $('.draggable').position();
-
-function returnMaterials() {
+function returnMaterials(parent1) {
   $('.draggable').css(parent1);
 }

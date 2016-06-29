@@ -13,8 +13,9 @@ class GameController extends Controller
 		$this->View->renderJSON($materials);
 	}
 
-	public function combineMaterial()
+	public function combineMaterials($parent1, $parent2)
 	{
-		//parent 1 + parent 2 makes a call to this function to ask the model if the parents make a material together
+		$creation = gameModel::getCreation($parent1, $parent2);
+		$this->View->renderJSON($creation);
 	}
 }

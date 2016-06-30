@@ -8,12 +8,16 @@
   -o-user-drag: none !important;
 }
 body {
-  overflow: hidden;
+  
 }
 
 #gameBody {
   background-image: url('../_img/game_bg.png');
   background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: hidden;
   -moz-user-select: none !important;
   -webkit-user-select: none !important;
   -ms-user-select: none !important;
@@ -54,12 +58,46 @@ body {
 }
 
 #combinerContainer {
-  background-attachment: fixed;
+  background-image: url("../_img/combiner.png");
+  background-position: center;
+  background-size: 540px 360px;
   width: 540px;
   height: 360px;
   z-index: 100;
 }
 
+#combinerArea1 {
+  position: relative;
+  top: 2.3rem;
+  left: 2.6rem;
+  width: 9rem;
+  height: 18rem;
+  float: left;
+}
+
+#combinerArea2 {
+  position: relative;
+  top: 2.3rem;
+  left: -2.6rem;
+  width: 9rem;
+  height: 18rem;
+  float: right;
+}
+
+#creation {
+  position: relative;
+  float: left;
+  left: 3.3rem;
+  top: 2.3rem;
+  width: 9rem;
+  height: 18rem;
+}
+
+.creation{
+  position: relative;
+  top: 84px;
+  left: 22px;
+}
 
 .materials {
   width: 40rem;
@@ -76,14 +114,6 @@ body {
   z-index: 1000;
   position: relative;
 
-}
-
-#Parent1, #Parent2 {
-  position: fixed !important;
-  -moz-user-drag: none !important;
-  -webkit-user-drag: none !important;
-  -ms-user-drag: none !important;
-  -o-user-drag: none !important;
 }
 
 .circle{
@@ -139,21 +169,21 @@ button{
 
 #return {
    position: relative;
+   left: 192.477px;
+   top: 2rem;
    padding: 10px 40px;
-   float: left;
    border-radius: 10px;
-   font-family: ;
    font-size: 25px;
    color: #FFF;
    text-decoration: none;
-   background-color: #3498DB ;
-   border-bottom: 5px solid #2980B9 ;
-   text-shadow: 0px -2px #2980B9 ;
+   background-color: #92744D ;
+   border-bottom: 5px solid #604C33 ;
+   text-shadow: 0px -2px #604C33 ;
    /* Animation */
    transition: all 0.1s;
 }
 
 #return:active {
    transform: translate(0px,5px);
-   border-bottom: 1px solid;
+   border-bottom: 1px solid #604C33;
 }

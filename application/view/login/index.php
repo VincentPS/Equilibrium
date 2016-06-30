@@ -3,7 +3,6 @@
   <div class="table-wrapper">
     <div class="play-box">
       <a id="play-box-button" href="<?php echo Config::get('URL'); ?>game/index">Play Game!</a>
-      <a id="play-box-button" href="<?php echo Config::get('URL'); ?>game/easy">Easy Mode!</a>
     </div>
   </div>
 </div>

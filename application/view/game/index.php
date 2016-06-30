@@ -12,6 +12,7 @@
 <div id="combiner">
     <div id="combinerContainer">
     	<div id="combinerArea1"></div>
+    	<div id="creation"></div>
     	<div id="combinerArea2"></div>
     </div>
 	<button id="return" onclick="returnMaterials()">Return</button>

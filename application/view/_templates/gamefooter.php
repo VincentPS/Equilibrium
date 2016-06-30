@@ -8,5 +8,6 @@
   <script src="<?php echo Config::get('URL'); ?>js/material_list.js"></script>
   <script src="<?php echo Config::get('URL'); ?>js/combiner.js"></script>
   <script src="<?php echo Config::get('URL'); ?>js/return.js"></script>
+  <script src="<?php echo Config::get('URL'); ?>js/end_game.js"></script>
 </body>
 </html>

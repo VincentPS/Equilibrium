@@ -23,12 +23,11 @@ function handleDragEvent() {
         .done(function(response){
             if (response) {
                 var mat_name = response.mat_name.toLowerCase();
-                console.log(mat_name);
                 if (mat_name == 'equilibrium') {
                 	
                 	$('#creation').append("<img class='creation' src='" + URL + "/_img/materials/" + mat_name + ".png'>");
                 	setTimeout(function(){
-						alert('Congratulations! Equilibrium has been found. Total harmony has been restored.');
+						endGame();
                 	}, 500);
                 } else {
 	                $('#creation').append("<img class='creation' src='" + URL + "/_img/materials/" + mat_name + ".png'>");

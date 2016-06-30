@@ -23,10 +23,19 @@ function handleDragEvent() {
         .done(function(response){
             if (response) {
                 var mat_name = response.mat_name.toLowerCase();
-                $('#creation').append("<img class='creation' src='" + URL + "/_img/materials/" + mat_name + ".png'>");
-                setTimeout(function(){
-                    returnMaterials();
-                }, 2000);      
+                console.log(mat_name);
+                if (mat_name == 'equilibrium') {
+                	
+                	$('#creation').append("<img class='creation' src='" + URL + "/_img/materials/" + mat_name + ".png'>");
+                	setTimeout(function(){
+						alert('Congratulations! Equilibrium has been found. Total harmony has been restored.');
+                	}, 500);
+                } else {
+	                $('#creation').append("<img class='creation' src='" + URL + "/_img/materials/" + mat_name + ".png'>");
+	                setTimeout(function(){
+	                    returnMaterials();
+	                }, 3500);
+                }   
             } else {
                 setTimeout(function(){
                     returnMaterials();

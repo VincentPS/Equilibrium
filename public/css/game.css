@@ -1,189 +1,163 @@
-*, *:before, *:after{
-  margin:0;
-  padding:0;
-  outline: none;
-  -moz-user-drag: none !important;
-  -webkit-user-drag: none !important;
-  -ms-user-drag: none !important;
-  -o-user-drag: none !important;
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    -moz-user-drag: none !important;
+    -webkit-user-drag: none !important;
+    -ms-user-drag: none !important;
+    -o-user-drag: none !important;
 }
-body {
-  
+body {} #gameBody {
+    background-image: url('../_img/game_bg.png');
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    -moz-user-select: none !important;
+    -webkit-user-select: none !important;
+    -ms-user-select: none !important;
+    -o-user-select: none !important;
 }
-
-#gameBody {
-  background-image: url('../_img/game_bg.png');
-  background-size: 100%;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  -moz-user-select: none !important;
-  -webkit-user-select: none !important;
-  -ms-user-select: none !important;
-  -o-user-select: none !important;
-}
-
 #container {
-  width: 3840px;
-  height: 2400px;
-  border: 2px solid;
-  position: fixed;
-  margin-left: auto;
-  margin-right: auto;
+    width: 3840px;
+    height: 2400px;
+    border: 2px solid;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-#box img{
-  width: 100%;
-  height: 100%;
+#box img {
+    width: 100%;
+    height: 100%;
 }
-
-#bg{
-  background-color: black;
+#bg {
+    background-color: black;
 }
-
 #testArea {
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
-
 #combiner {
-  position: absolute;
-  width: 540px;
-  height: 360px;
-  float: right;
-  top: 16rem;
-  right: 15rem;
+    position: absolute;
+    width: 540px;
+    height: 360px;
+    float: right;
+    top: 16rem;
+    right: 15rem;
 }
-
 #combinerContainer {
-  background-image: url("../_img/combiner.png");
-  background-position: center;
-  background-size: 540px 360px;
-  width: 540px;
-  height: 360px;
-  z-index: 100;
+    background-image: url("../_img/combiner.png");
+    background-position: center;
+    background-size: 540px 360px;
+    width: 540px;
+    height: 360px;
+    z-index: 100;
 }
-
 #combinerArea1 {
-  position: relative;
-  top: 2.3rem;
-  left: 2.6rem;
-  width: 9rem;
-  height: 18rem;
-  float: left;
+    position: relative;
+    top: 2.3rem;
+    left: 2.6rem;
+    width: 9rem;
+    height: 18rem;
+    float: left;
 }
-
 #combinerArea2 {
-  position: relative;
-  top: 2.3rem;
-  left: -2.6rem;
-  width: 9rem;
-  height: 18rem;
-  float: right;
+    position: relative;
+    top: 2.3rem;
+    left: -2.6rem;
+    width: 9rem;
+    height: 18rem;
+    float: right;
 }
-
 #creation {
-  position: relative;
-  float: left;
-  left: 3.3rem;
-  top: 2.3rem;
-  width: 9rem;
-  height: 18rem;
+    position: relative;
+    float: left;
+    left: 3.3rem;
+    top: 2.3rem;
+    width: 9rem;
+    height: 18rem;
 }
-
-.creation{
-  position: relative;
-  top: 84px;
-  left: 22px;
+.creation {
+    position: relative;
+    top: 84px;
+    left: 22px;
 }
-
 .materials {
-  width: 40rem;
-  height: 52.76rem;
-  top: 4rem;
-  position: absolute;
-  left: 17.5rem;
-  border-left: 3px solid black;
-  border-bottom: 3px solid black;
-  padding-left: 1rem;
+    width: 40rem;
+    height: 52.76rem;
+    top: 4rem;
+    position: absolute;
+    left: 17.5rem;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    padding-left: 1rem;
 }
-
 .draggable {
-  z-index: 1000;
-  position: relative;
-
+    z-index: 1000;
+    position: relative;
 }
-
-.circle{
-  position: relative;
-  top: 4rem;
-  left: 10rem;
+.circle {
+    position: relative;
+    top: 4rem;
+    left: 10rem;
 }
-
-
-.active{
-  border-bottom: 3px solid black;
-  width: 120px;
+.active {
+    border-bottom: 3px solid black;
+    width: 120px;
 }
-
 .alpha {
-  margin-bottom: 3.5rem;
-  list-style-type: none;
+    margin-bottom: 3.5rem;
+    list-style-type: none;
 }
-
 .beta {
-  margin-bottom: 3.5rem;
-  list-style-type: none;
+    margin-bottom: 3.5rem;
+    list-style-type: none;
 }
-
 .gamma {
-  margin-bottom: 3.5rem;
-  list-style-type: none;
+    margin-bottom: 3.5rem;
+    list-style-type: none;
 }
-
 .delta {
-  margin-bottom: 3.5rem;
-  list-style-type: none;
+    margin-bottom: 3.5rem;
+    list-style-type: none;
 }
-
 .omega {
-  margin-bottom: 3.5rem;
-  list-style-type: none;
+    margin-bottom: 3.5rem;
+    list-style-type: none;
 }
-
-.alpha img, .beta img, .gamma img, .delta img, .omega img {
-  width: 110px;
-  height: 120px;
+.alpha img,
+.beta img,
+.gamma img,
+.delta img,
+.omega img {
+    width: 110px;
+    height: 120px;
 }
-
-button{
-  border: none;
-  background-color: transparent;
+button {
+    border: none;
+    background-color: transparent;
 }
+.materials {} #return {
+    position: relative;
+    left: 192.477px;
+    top: 2rem;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #FFF;
+    text-decoration: none;
+    background-color: #92744D;
+    border-bottom: 5px solid #604C33;
+    text-shadow: 0px -2px #604C33;
+    /* Animation */
 
-.materials{
-
+    transition: all 0.1s;
 }
-
-#return {
-   position: relative;
-   left: 192.477px;
-   top: 2rem;
-   padding: 10px 40px;
-   border-radius: 10px;
-   font-size: 25px;
-   color: #FFF;
-   text-decoration: none;
-   background-color: #92744D ;
-   border-bottom: 5px solid #604C33 ;
-   text-shadow: 0px -2px #604C33 ;
-   /* Animation */
-   transition: all 0.1s;
-}
-
 #return:active {
-   transform: translate(0px,5px);
-   border-bottom: 1px solid #604C33;
+    transform: translate(0px, 5px);
+    border-bottom: 1px solid #604C33;
 }

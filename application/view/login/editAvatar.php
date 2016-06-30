@@ -7,8 +7,7 @@
         <h3>Upload an Avatar</h3>
 
         <div class="feedback info">
-            If you still see the old picture after uploading a new one: Hard-Reload the page with F5! Your browser doesn't
-            realize there's a new image as new and old one have the same filename.
+            If you still see the old picture after uploading a new one: Hard-Reload the page with F5! Your browser doesn't realize there's a new image as new and old one have the same filename.
         </div>
 
         <form action="<?php echo Config::get('URL'); ?>login/uploadAvatar_action" method="post" enctype="multipart/form-data">

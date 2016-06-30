@@ -1,10 +1,10 @@
 <?php $this->renderFeedbackMessages(); ?>
 <div class="play-page-box">
-  <div class="table-wrapper">
-    <div class="play-box">
-      <a id="play-box-button" href="<?php echo Config::get('URL'); ?>game/index">Play Game!</a>
+    <div class="table-wrapper">
+        <div class="play-box">
+            <a id="play-box-button" href="<?php echo Config::get('URL'); ?>game/index">Play Game!</a>
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="login-page-box">
@@ -19,10 +19,10 @@
                     Remember me for 2 weeks
                 </label>
                 <?php if (!empty($this->redirect)) { ?>
-                    <input type="hidden" name="redirect" value="<?php echo $this->redirect ?>" />
+                <input type="hidden" name="redirect" value="<?php echo $this->redirect ?>" />
                 <?php } ?>
-				<input type="hidden" name="csrf_token" value="<?= Csrf::makeToken(); ?>" />
-                <input type="submit" class="login-submit-button" value="Log in"/>
+                <input type="hidden" name="csrf_token" value="<?= Csrf::makeToken(); ?>" />
+                <input type="submit" class="login-submit-button" value="Log in" />
             </form>
             <div class="link-forgot-my-password">
                 <a href="<?php echo Config::get('URL'); ?>login/requestPasswordReset">I forgot my password</a>

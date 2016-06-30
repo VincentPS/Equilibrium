@@ -12,6 +12,7 @@ body {
     width: 500px;
     margin: 0 auto;
 }*/
+
 .container {
     max-width: 960px;
     border: 1px solid #ccc;
@@ -60,14 +61,14 @@ body {
     background-color: #222;
     color: #fff;
 }
-
 /* overview */
+
 .overview-table img {
     width: 40px;
     height: 40px;
 }
-
 /* feedback boxes */
+
 .feedback {
     padding: 30px;
     margin-bottom: 10px;
@@ -84,23 +85,21 @@ body {
     color: #00529B;
     background-color: #BDE5F8;
 }
-
 .header_right_box {
     float: right;
 }
-
 /* login screen */
+
 .login-page-box {
     display: table;
     position: absolute;
     right: 2.4rem;
     bottom: 8.5rem;
-    float:right;
- }
+    float: right;
+}
 .login-page-box .table-wrapper {
     display: table-row;
 }
-
 .login-box {
     display: table-cell;
     margin: 0;
@@ -124,7 +123,8 @@ body {
     margin-bottom: 10px;
     display: block;
     width: 100%;
-    box-sizing: border-box; /* modern way to say width:100% without padding */
+    box-sizing: border-box;
+    /* modern way to say width:100% without padding */
 }
 .login-box input[type="checkbox"] {
     cursor: pointer;
@@ -137,7 +137,9 @@ body {
     margin-bottom: 10px;
     display: block;
     width: 100%;
-    box-sizing: border-box; /* modern way to say width:100% without padding */
+    box-sizing: border-box;
+    /* modern way to say width:100% without padding */
+
     text-transform: uppercase;
     font-family: 'Itim', cursive;
     font-weight: bold;
@@ -163,12 +165,23 @@ body {
 .login-box .link-forgot-my-password a:hover {
     text-decoration: underline;
 }
-.login-box ::-webkit-input-placeholder { color: #777; opacity: 0.5; }
-.login-box ::-moz-placeholder { color: #777; opacity: 0.5; }
-.login-box :-ms-input-placeholder { color: #777; opacity: 0.5; }
-.login-box input:-moz-placeholder { color: #777; opacity: 0.5; }
-
-#register-box{
+.login-box::-webkit-input-placeholder {
+    color: #777;
+    opacity: 0.5;
+}
+.login-box::-moz-placeholder {
+    color: #777;
+    opacity: 0.5;
+}
+.login-box:-ms-input-placeholder {
+    color: #777;
+    opacity: 0.5;
+}
+.login-box input:-moz-placeholder {
+    color: #777;
+    opacity: 0.5;
+}
+#register-box {
     text-decoration: none;
     text-align: center;
     color: #777;
@@ -189,20 +202,19 @@ body {
     background-color: #252525;
 }
 /* error page */
+
 .red-text {
     color: red;
 }
-
 .register-page-box {
     display: table;
     position: absolute;
     right: 1.6rem;
     bottom: 8.5rem;
- }
+}
 .register-page-box .register-table-wrapper {
     display: table-row;
 }
-
 .register-box {
     display: table-cell;
     margin: 0;
@@ -226,7 +238,8 @@ body {
     margin-bottom: 10px;
     display: block;
     width: 100%;
-    box-sizing: border-box; /* modern way to say width:100% without padding */
+    box-sizing: border-box;
+    /* modern way to say width:100% without padding */
 }
 .register-box input[type="checkbox"] {
     cursor: pointer;
@@ -239,7 +252,9 @@ body {
     margin-bottom: 10px;
     display: block;
     width: 100%;
-    box-sizing: border-box; /* modern way to say width:100% without padding */
+    box-sizing: border-box;
+    /* modern way to say width:100% without padding */
+
     cursor: pointer;
 }
 .register-box input[type="submit"]:hover {
@@ -262,12 +277,24 @@ body {
 .register-box .link-forgot-my-password a:hover {
     text-decoration: underline;
 }
-.register-box ::-webkit-input-placeholder { color: #777; opacity: 0.5; }
-.register-box ::-moz-placeholder { color: #777; opacity: 0.5; }
-.register-box :-ms-input-placeholder { color: #777; opacity: 0.5; }
-.register-box input:-moz-placeholder { color: #777; opacity: 0.5; }
-
+.register-box::-webkit-input-placeholder {
+    color: #777;
+    opacity: 0.5;
+}
+.register-box::-moz-placeholder {
+    color: #777;
+    opacity: 0.5;
+}
+.register-box:-ms-input-placeholder {
+    color: #777;
+    opacity: 0.5;
+}
+.register-box input:-moz-placeholder {
+    color: #777;
+    opacity: 0.5;
+}
 /* login screen */
+
 .play-page-box {
     display: table;
     position: absolute;
@@ -275,11 +302,10 @@ body {
     bottom: 8.5rem;
     float: left;
     height: 25rem;
- }
+}
 .play-page-box .table-wrapper {
     display: table-row;
 }
-
 .play-box {
     display: table-cell;
     margin: 0;
@@ -291,11 +317,9 @@ body {
     font-weight: 400;
     border: 3px solid black;
 }
-
 .play-box h2 {
     color: #252525;
 }
-
 .play-box input[type="submit"] {
     color: #777;
     background-color: rgba(244, 243, 241, 0.75);
@@ -304,24 +328,35 @@ body {
     margin-bottom: 10px;
     display: block;
     width: 100%;
-    box-sizing: border-box; /* modern way to say width:100% without padding */
+    box-sizing: border-box;
+    /* modern way to say width:100% without padding */
+
     text-transform: uppercase;
     font-family: 'Itim', cursive;
     font-weight: bold;
     cursor: pointer;
 }
-
 .play-box input[type="submit"]:hover {
     color: #fff;
     border-color: #252525;
     background-color: #252525;
 }
-
-.play-box ::-webkit-input-placeholder { color: #777; opacity: 0.5; }
-.play-box ::-moz-placeholder { color: #777; opacity: 0.5; }
-.play-box :-ms-input-placeholder { color: #777; opacity: 0.5; }
-.play-box input:-moz-placeholder { color: #777; opacity: 0.5; }
-
+.play-box::-webkit-input-placeholder {
+    color: #777;
+    opacity: 0.5;
+}
+.play-box::-moz-placeholder {
+    color: #777;
+    opacity: 0.5;
+}
+.play-box:-ms-input-placeholder {
+    color: #777;
+    opacity: 0.5;
+}
+.play-box input:-moz-placeholder {
+    color: #777;
+    opacity: 0.5;
+}
 #play-box-button {
     text-decoration: none;
     text-align: center;
@@ -338,7 +373,6 @@ body {
     box-sizing: border-box;
     font-weight: bold;
 }
-
 #play-box-button:hover {
     color: #fff;
     border-color: #252525;

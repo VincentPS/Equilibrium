@@ -39,8 +39,9 @@ function openBeta() {
 		var betaMaterials = response;
 		$('.materials').html("");
 		$.each(betaMaterials, function(key, value){
-			var mat_name = value.mat_name.toLowerCase();
-			$('.materials').append("<img class='draggable " + mat_name + "' src='" + URL + "/_img/materials/" + mat_name + ".png'>");
+			var mat_name = value.mat_name.toLowerCase(),
+				mat_id = value.mat_id;
+			$('.materials').append("<img class='draggable " + mat_name + " " + mat_id + "' src='" + URL + "/_img/materials/" + mat_name + ".png'>");
 		});
 		var parent1 = $('.draggable').position();
 
@@ -62,8 +63,9 @@ function openGamma() {
 		var gammaMaterials = response;
 		$('.materials').html("");
 		$.each(gammaMaterials, function(key, value){
-			var mat_name = value.mat_name.toLowerCase();
-			$('.materials').append("<img class='draggable " + mat_name + "' src='" + URL + "/_img/materials/" + mat_name + ".png'>");
+			var mat_name = value.mat_name.toLowerCase(),
+				mat_id = value.mat_id;
+			$('.materials').append("<img class='draggable " + mat_name + " " + mat_id + "' src='" + URL + "/_img/materials/" + mat_name + ".png'>");
 		});
 		var parent1 = $('.draggable').position();
 
@@ -85,8 +87,9 @@ function openDelta() {
 		var deltaMaterials = response;
 		$('.materials').html("");
 		$.each(deltaMaterials, function(key, value){
-			var mat_name = value.mat_name.toLowerCase();
-			$('.materials').append("<img class='draggable " + mat_name + "' src='" + URL + "/_img/materials/" + mat_name + ".png'>");
+			var mat_name = value.mat_name.toLowerCase(),
+				mat_id = value.mat_id;
+			$('.materials').append("<img class='draggable " + mat_name + " " + mat_id + "' src='" + URL + "/_img/materials/" + mat_name + ".png'>");
 		});
 		var parent1 = $('.draggable').position();
 
@@ -108,8 +111,9 @@ function openOmega() {
 		var omegaMaterials = response;
 		$('.materials').html("");
 		$.each(omegaMaterials, function(key, value){
-			var mat_name = value.mat_name.toLowerCase();
-			$('.materials').append("<img class='draggable " + mat_name + "' src='" + URL + "/_img/materials/" + mat_name + ".png'>");
+			var mat_name = value.mat_name.toLowerCase(),
+				mat_id = value.mat_id;
+			$('.materials').append("<img class='draggable " + mat_name + " " + mat_id + "' src='" + URL + "/_img/materials/" + mat_name + ".png'>");
 		});
 		var parent1 = $('.draggable').position();
 

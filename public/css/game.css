@@ -58,7 +58,7 @@ body {
 }
 
 #combinerContainer {
-  background-image: url("../_img/combiner3.png");
+  background-image: url("../_img/combiner.png");
   background-position: center;
   background-size: 540px 360px;
   width: 540px;
@@ -82,6 +82,21 @@ body {
   width: 9rem;
   height: 18rem;
   float: right;
+}
+
+#creation {
+  position: relative;
+  float: left;
+  left: 3.3rem;
+  top: 2.3rem;
+  width: 9rem;
+  height: 18rem;
+}
+
+.creation{
+  position: relative;
+  top: 84px;
+  left: 22px;
 }
 
 .materials {
